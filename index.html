@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>칭찬도장</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script type="module" src="app.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🎉 칭찬도장</h1>
+    <p class="subtitle">
+        발표가 좋았다면 칭찬도장을 찍어주세요.
+    </p>
+
+    <input
+        type="text"
+        id="name"
+        placeholder="이름 또는 별명">
+
+    <input
+        type="text"
+        id="org"
+        placeholder="소속">
+
+    <h3>칭찬 이유</h3>
+
+    <label><input type="checkbox" name="reason" value="내용"> 내용</label>
+    <label><input type="checkbox" name="reason" value="전달력"> 전달력</label>
+    <label><input type="checkbox" name="reason" value="자료이해도"> 자료이해도</label>
+    <label><input type="checkbox" name="reason" value="답변"> 답변</label>
+    <label><input type="checkbox" name="reason" value="유머"> 유머</label>
+    <label><input type="checkbox" name="reason" value="아이디어"> 아이디어</label>
+    <label><input type="checkbox" name="reason" value="기타"> 기타</label>
+
+    <textarea
+        id="etc"
+        placeholder="기타 사유 또는 아쉬운 점을 입력해주세요"
+        style="display:none;">
+    </textarea>
+
+    <button id="submitBtn">
+        도장 찍기
+    </button>
+
+    <button id="shareBtn" style="display:none;">
+        링크 공유하기
+    </button>
+
+</div>
+
+</body>
+</html>
